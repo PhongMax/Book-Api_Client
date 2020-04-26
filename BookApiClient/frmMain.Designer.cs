@@ -61,7 +61,7 @@
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
-            this.ribbonControl1.Size = new System.Drawing.Size(948, 177);
+            this.ribbonControl1.Size = new System.Drawing.Size(1048, 158);
             // 
             // barButtonItem1
             // 
@@ -118,7 +118,6 @@
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup1});
-            this.ribbonPage1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage1.ImageOptions.Image")));
             this.ribbonPage1.Name = "ribbonPage1";
             this.ribbonPage1.Text = "Book Management";
             // 
@@ -139,8 +138,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(948, 649);
+            this.ClientSize = new System.Drawing.Size(1048, 699);
             this.Controls.Add(this.ribbonControl1);
+            this.IconOptions.Image = global::BookApiClient.Properties.Resources.search_book_open_search_locate_6178;
             this.IsMdiContainer = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;

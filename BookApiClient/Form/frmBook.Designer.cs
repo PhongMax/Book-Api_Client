@@ -36,7 +36,7 @@
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(986, 503);
+            this.ClientSize = new System.Drawing.Size(995, 495);
             this.Name = "frmBook";
             this.Text = "     Book    ";
             this.ResumeLayout(false);
