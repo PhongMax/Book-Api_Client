@@ -59,5 +59,15 @@ namespace BookApiClient.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap search_book_open_search_locate_6178 {
+            get {
+                object obj = ResourceManager.GetObject("search_book_open_search_locate_6178", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

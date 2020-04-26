@@ -1,4 +1,5 @@
 ﻿using BookApiClient.Models;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,23 +12,11 @@ namespace BookApiClient
     class PublisherRepository
     {
 
-      
-      
-        // receive message 
-        public string _responseMessage { get; private set; }
-
-        public async Task<bool> DeletePublisherAsync(int publisherId)
+        public async Task<System.Net.HttpStatusCode> DeletePublisherAsync(int publisherId)
         {
             HttpClient client = HttpClients.GetInstance();
-           
             HttpResponseMessage response = await client.DeleteAsync("publishers/delete/" + publisherId);
-            if (!response.IsSuccessStatusCode)
-            {
-                string message = await response.Content.ReadAsStringAsync();
-                _responseMessage = message;
-                return false;
-            }
-            return true;
+            return response.StatusCode;     
         }
 
 
@@ -38,8 +27,6 @@ namespace BookApiClient
             HttpResponseMessage response = await client.PostAsJsonAsync("publishers/create", publisher);
             if (!response.IsSuccessStatusCode)
             {
-                string message = await response.Content.ReadAsStringAsync();
-                _responseMessage = message;
                 return false; ;
             }
             return true;
@@ -47,18 +34,14 @@ namespace BookApiClient
 
 
 
-        public async Task<Models.Publisher> GetPublishertAsync(string publisherId)
+        public async Task<Models.Publisher> GetPublishertAsync(int publisherId)
         {
             HttpClient client = HttpClients.GetInstance();
             Models.Publisher publisher = null;
-            HttpResponseMessage response = await client.GetAsync("publishers / getbyid /" + publisherId);
+            HttpResponseMessage response = await client.GetAsync("publishers/getbyid/" + publisherId);
             if (response.IsSuccessStatusCode)
             {
                 publisher = await response.Content.ReadAsAsync<Models.Publisher>();
-            }else
-            {
-                string message = await response.Content.ReadAsStringAsync();
-                _responseMessage = message;
             }
             return publisher;
         }
@@ -67,22 +50,17 @@ namespace BookApiClient
         public async Task<List<Models.Publisher>> GetAllPublihersAsync()
         {
             HttpClient client = HttpClients.GetInstance();
-            HttpResponseMessage response = await client.GetAsync("product/getallproducts");
-            List<Models.Publisher> publiserArr = null;
+
+            HttpResponseMessage response = await client.GetAsync("publishers/getall");
+            List<Models.Publisher> listPublisher = null;
             if (response.IsSuccessStatusCode)
             {
-                 publiserArr = await response.Content.ReadAsAsync<List<Models.Publisher>>();
-            }
-            else
-            {
-                string message = await response.Content.ReadAsStringAsync();
-                _responseMessage = message;
+                listPublisher = await response.Content.ReadAsAsync<List<Models.Publisher>>();
+
             }
 
-            return publiserArr;
+            return listPublisher;
         }
-
-
 
         public async Task<bool> EditProductAsync(Models.Publisher publisher)
         {
@@ -91,8 +69,7 @@ namespace BookApiClient
             HttpResponseMessage response = await client.PutAsJsonAsync("publishers/update/", publisher);
             if (!response.IsSuccessStatusCode)
             {
-                string message = await response.Content.ReadAsStringAsync();
-                _responseMessage = message;
+             
                 return false; ;
             }
             return true;
