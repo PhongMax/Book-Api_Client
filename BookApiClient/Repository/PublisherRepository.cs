@@ -62,7 +62,7 @@ namespace BookApiClient
             return listPublisher;
         }
 
-        public async Task<bool> EditProductAsync(Models.Publisher publisher)
+        public async Task<bool> EditPublisherAsync(Models.Publisher publisher)
         {
 
             HttpClient client = HttpClients.GetInstance();

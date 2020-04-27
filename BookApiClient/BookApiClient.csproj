@@ -142,6 +142,7 @@
     <Compile Include="Models\Publisher.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\AuthorRepository.cs" />
     <Compile Include="Repository\BookCategoryRepository.cs" />
     <Compile Include="Repository\BookRepository.cs" />
     <Compile Include="Repository\PublisherRepository.cs" />

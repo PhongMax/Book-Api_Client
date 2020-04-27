@@ -81,7 +81,7 @@ namespace BookApiClient
             publisher.Phone = txtPhone.Text;
             publisher.Address = txtAddress.Text;
 
-            bool x = await _publisherRepository.EditProductAsync(publisher);
+            bool x = await _publisherRepository.EditPublisherAsync(publisher);
             if (x)
             {
                 XtraMessageBox.Show("Edit successfully !", "Success", MessageBoxButtons.OK);
