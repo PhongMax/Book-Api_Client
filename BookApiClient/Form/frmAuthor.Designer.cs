@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAuthor));
             this.groupControlEdit = new DevExpress.XtraEditors.GroupControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
@@ -37,7 +36,7 @@
             this.btnHuy = new DevExpress.XtraEditors.SimpleButton();
             this.btnSave = new DevExpress.XtraEditors.SimpleButton();
             this.txtAddress = new DevExpress.XtraEditors.TextEdit();
-            this.txtName = new DevExpress.XtraEditors.TextEdit();
+            this.txtFullName = new DevExpress.XtraEditors.TextEdit();
             this.txtID = new DevExpress.XtraEditors.TextEdit();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -52,7 +51,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControlEdit)).BeginInit();
             this.groupControlEdit.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtAddress.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtName.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtFullName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
@@ -68,7 +67,7 @@
             this.groupControlEdit.Controls.Add(this.btnHuy);
             this.groupControlEdit.Controls.Add(this.btnSave);
             this.groupControlEdit.Controls.Add(this.txtAddress);
-            this.groupControlEdit.Controls.Add(this.txtName);
+            this.groupControlEdit.Controls.Add(this.txtFullName);
             this.groupControlEdit.Controls.Add(this.txtID);
             this.groupControlEdit.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControlEdit.Location = new System.Drawing.Point(0, 405);
@@ -130,12 +129,12 @@
             this.txtAddress.Size = new System.Drawing.Size(226, 20);
             this.txtAddress.TabIndex = 3;
             // 
-            // txtName
+            // txtFullName
             // 
-            this.txtName.Location = new System.Drawing.Point(176, 42);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(198, 20);
-            this.txtName.TabIndex = 1;
+            this.txtFullName.Location = new System.Drawing.Point(176, 42);
+            this.txtFullName.Name = "txtFullName";
+            this.txtFullName.Size = new System.Drawing.Size(198, 20);
+            this.txtFullName.TabIndex = 1;
             // 
             // txtID
             // 
@@ -286,7 +285,7 @@
             this.groupControlEdit.ResumeLayout(false);
             this.groupControlEdit.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtAddress.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtName.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtFullName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
@@ -305,7 +304,7 @@
         private DevExpress.XtraEditors.SimpleButton btnHuy;
         private DevExpress.XtraEditors.SimpleButton btnSave;
         private DevExpress.XtraEditors.TextEdit txtAddress;
-        private DevExpress.XtraEditors.TextEdit txtName;
+        private DevExpress.XtraEditors.TextEdit txtFullName;
         private DevExpress.XtraEditors.TextEdit txtID;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;

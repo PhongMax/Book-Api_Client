@@ -45,7 +45,7 @@ namespace BookApiClient.Repository
         }
 
 
-        public async Task<List<Models.Author>> GetAllPublihersAsync()
+        public async Task<List<Models.Author>> GetAllAuthorsAsync()
         {
             HttpClient client = HttpClients.GetInstance();
 

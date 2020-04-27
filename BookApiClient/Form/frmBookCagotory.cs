@@ -60,8 +60,8 @@ namespace BookApiClient
 
             if (XtraMessageBox.Show("Are you sure  to delete this line? ", "Confirm", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
-                var listPublisher = await _BookCategoryRepository.DeleteBookCategoryAsync(Id);
-                if (listPublisher.ToString().Equals("OK"))
+                var httpStatusCode = await _BookCategoryRepository.DeleteBookCategoryAsync(Id);
+                if (httpStatusCode.ToString().Equals("OK"))
                 {
                     XtraMessageBox.Show("Delete successfully !", "Success", MessageBoxButtons.OK);
                     LoadDataToGridView();
