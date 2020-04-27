@@ -140,10 +140,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1048, 699);
             this.Controls.Add(this.ribbonControl1);
-            this.IconOptions.Image = global::BookApiClient.Properties.Resources.search_book_open_search_locate_6178;
+            this.IconOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("frmMain.IconOptions.SvgImage")));
             this.IsMdiContainer = true;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "frmMain";
             this.Ribbon = this.ribbonControl1;
             this.RibbonVisibility = DevExpress.XtraBars.Ribbon.RibbonVisibility.Visible;
