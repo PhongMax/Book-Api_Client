@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.DataAccess.Json.UriJsonSource uriJsonSource2 = new DevExpress.DataAccess.Json.UriJsonSource();
-            DevExpress.DataAccess.Json.JsonSchemaNode jsonSchemaNode11 = new DevExpress.DataAccess.Json.JsonSchemaNode("root", true, DevExpress.DataAccess.Json.JsonNodeType.Array);
-            DevExpress.DataAccess.Json.JsonSchemaNode jsonSchemaNode12 = new DevExpress.DataAccess.Json.JsonSchemaNode("ID", true, DevExpress.DataAccess.Json.JsonNodeType.Property, typeof(System.Nullable<long>));
-            DevExpress.DataAccess.Json.JsonSchemaNode jsonSchemaNode13 = new DevExpress.DataAccess.Json.JsonSchemaNode("Name", true, DevExpress.DataAccess.Json.JsonNodeType.Property, typeof(string));
-            DevExpress.DataAccess.Json.JsonSchemaNode jsonSchemaNode14 = new DevExpress.DataAccess.Json.JsonSchemaNode("PubDate", true, DevExpress.DataAccess.Json.JsonNodeType.Property, typeof(System.Nullable<System.DateTime>));
-            DevExpress.DataAccess.Json.JsonSchemaNode jsonSchemaNode15 = new DevExpress.DataAccess.Json.JsonSchemaNode("Cost", true, DevExpress.DataAccess.Json.JsonNodeType.Property, typeof(System.Nullable<long>));
-            DevExpress.DataAccess.Json.JsonSchemaNode jsonSchemaNode16 = new DevExpress.DataAccess.Json.JsonSchemaNode("Retail", true, DevExpress.DataAccess.Json.JsonNodeType.Property, typeof(System.Nullable<long>));
-            DevExpress.DataAccess.Json.JsonSchemaNode jsonSchemaNode17 = new DevExpress.DataAccess.Json.JsonSchemaNode("BookCategoryName", true, DevExpress.DataAccess.Json.JsonNodeType.Property, typeof(string));
-            DevExpress.DataAccess.Json.JsonSchemaNode jsonSchemaNode18 = new DevExpress.DataAccess.Json.JsonSchemaNode("PublisherName", true, DevExpress.DataAccess.Json.JsonNodeType.Property, typeof(string));
-            DevExpress.DataAccess.Json.JsonSchemaNode jsonSchemaNode19 = new DevExpress.DataAccess.Json.JsonSchemaNode("Images", true, DevExpress.DataAccess.Json.JsonNodeType.Array, typeof(string[]));
-            DevExpress.DataAccess.Json.JsonSchemaNode jsonSchemaNode20 = new DevExpress.DataAccess.Json.JsonSchemaNode("AuthorNames", true, DevExpress.DataAccess.Json.JsonNodeType.Array, typeof(string[]));
+            DevExpress.DataAccess.Json.UriJsonSource uriJsonSource1 = new DevExpress.DataAccess.Json.UriJsonSource();
+            DevExpress.DataAccess.Json.JsonSchemaNode jsonSchemaNode1 = new DevExpress.DataAccess.Json.JsonSchemaNode("root", true, DevExpress.DataAccess.Json.JsonNodeType.Array);
+            DevExpress.DataAccess.Json.JsonSchemaNode jsonSchemaNode2 = new DevExpress.DataAccess.Json.JsonSchemaNode("ID", true, DevExpress.DataAccess.Json.JsonNodeType.Property, typeof(System.Nullable<long>));
+            DevExpress.DataAccess.Json.JsonSchemaNode jsonSchemaNode3 = new DevExpress.DataAccess.Json.JsonSchemaNode("Name", true, DevExpress.DataAccess.Json.JsonNodeType.Property, typeof(string));
+            DevExpress.DataAccess.Json.JsonSchemaNode jsonSchemaNode4 = new DevExpress.DataAccess.Json.JsonSchemaNode("PubDate", true, DevExpress.DataAccess.Json.JsonNodeType.Property, typeof(System.Nullable<System.DateTime>));
+            DevExpress.DataAccess.Json.JsonSchemaNode jsonSchemaNode5 = new DevExpress.DataAccess.Json.JsonSchemaNode("Cost", true, DevExpress.DataAccess.Json.JsonNodeType.Property, typeof(System.Nullable<long>));
+            DevExpress.DataAccess.Json.JsonSchemaNode jsonSchemaNode6 = new DevExpress.DataAccess.Json.JsonSchemaNode("Retail", true, DevExpress.DataAccess.Json.JsonNodeType.Property, typeof(System.Nullable<long>));
+            DevExpress.DataAccess.Json.JsonSchemaNode jsonSchemaNode7 = new DevExpress.DataAccess.Json.JsonSchemaNode("BookCategoryName", true, DevExpress.DataAccess.Json.JsonNodeType.Property, typeof(string));
+            DevExpress.DataAccess.Json.JsonSchemaNode jsonSchemaNode8 = new DevExpress.DataAccess.Json.JsonSchemaNode("PublisherName", true, DevExpress.DataAccess.Json.JsonNodeType.Property, typeof(string));
+            DevExpress.DataAccess.Json.JsonSchemaNode jsonSchemaNode9 = new DevExpress.DataAccess.Json.JsonSchemaNode("Images", true, DevExpress.DataAccess.Json.JsonNodeType.Array, typeof(string[]));
+            DevExpress.DataAccess.Json.JsonSchemaNode jsonSchemaNode10 = new DevExpress.DataAccess.Json.JsonSchemaNode("AuthorNames", true, DevExpress.DataAccess.Json.JsonNodeType.Array, typeof(string[]));
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.jsonDataSource1 = new DevExpress.DataAccess.Json.JsonDataSource(this.components);
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -68,19 +68,19 @@
             // 
             // jsonDataSource1
             // 
-            uriJsonSource2.Uri = new System.Uri("https://bookapiptit.azurewebsites.net/api/books/getalltoview", System.UriKind.Absolute);
-            this.jsonDataSource1.JsonSource = uriJsonSource2;
+            uriJsonSource1.Uri = new System.Uri("https://bookapiptit.azurewebsites.net/api/books/getalltoview", System.UriKind.Absolute);
+            this.jsonDataSource1.JsonSource = uriJsonSource1;
             this.jsonDataSource1.Name = "jsonDataSource1";
-            jsonSchemaNode11.Nodes.Add(jsonSchemaNode12);
-            jsonSchemaNode11.Nodes.Add(jsonSchemaNode13);
-            jsonSchemaNode11.Nodes.Add(jsonSchemaNode14);
-            jsonSchemaNode11.Nodes.Add(jsonSchemaNode15);
-            jsonSchemaNode11.Nodes.Add(jsonSchemaNode16);
-            jsonSchemaNode11.Nodes.Add(jsonSchemaNode17);
-            jsonSchemaNode11.Nodes.Add(jsonSchemaNode18);
-            jsonSchemaNode11.Nodes.Add(jsonSchemaNode19);
-            jsonSchemaNode11.Nodes.Add(jsonSchemaNode20);
-            this.jsonDataSource1.Schema = jsonSchemaNode11;
+            jsonSchemaNode1.Nodes.Add(jsonSchemaNode2);
+            jsonSchemaNode1.Nodes.Add(jsonSchemaNode3);
+            jsonSchemaNode1.Nodes.Add(jsonSchemaNode4);
+            jsonSchemaNode1.Nodes.Add(jsonSchemaNode5);
+            jsonSchemaNode1.Nodes.Add(jsonSchemaNode6);
+            jsonSchemaNode1.Nodes.Add(jsonSchemaNode7);
+            jsonSchemaNode1.Nodes.Add(jsonSchemaNode8);
+            jsonSchemaNode1.Nodes.Add(jsonSchemaNode9);
+            jsonSchemaNode1.Nodes.Add(jsonSchemaNode10);
+            this.jsonDataSource1.Schema = jsonSchemaNode1;
             // 
             // gridView1
             // 
@@ -93,6 +93,7 @@
             this.colBookCategoryName,
             this.colPublisherName});
             this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.HorzScrollVisibility = DevExpress.XtraGrid.Views.Base.ScrollVisibility.Always;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
             // 
@@ -103,6 +104,7 @@
             this.colID.OptionsColumn.ReadOnly = true;
             this.colID.Visible = true;
             this.colID.VisibleIndex = 0;
+            this.colID.Width = 70;
             // 
             // colName
             // 
@@ -111,6 +113,7 @@
             this.colName.OptionsColumn.ReadOnly = true;
             this.colName.Visible = true;
             this.colName.VisibleIndex = 1;
+            this.colName.Width = 87;
             // 
             // colPubDate
             // 
@@ -119,6 +122,7 @@
             this.colPubDate.OptionsColumn.ReadOnly = true;
             this.colPubDate.Visible = true;
             this.colPubDate.VisibleIndex = 2;
+            this.colPubDate.Width = 58;
             // 
             // colCost
             // 
@@ -127,6 +131,7 @@
             this.colCost.OptionsColumn.ReadOnly = true;
             this.colCost.Visible = true;
             this.colCost.VisibleIndex = 3;
+            this.colCost.Width = 40;
             // 
             // colRetail
             // 
@@ -135,6 +140,7 @@
             this.colRetail.OptionsColumn.ReadOnly = true;
             this.colRetail.Visible = true;
             this.colRetail.VisibleIndex = 4;
+            this.colRetail.Width = 55;
             // 
             // colBookCategoryName
             // 
@@ -143,6 +149,7 @@
             this.colBookCategoryName.OptionsColumn.ReadOnly = true;
             this.colBookCategoryName.Visible = true;
             this.colBookCategoryName.VisibleIndex = 5;
+            this.colBookCategoryName.Width = 119;
             // 
             // colPublisherName
             // 
@@ -151,6 +158,7 @@
             this.colPublisherName.OptionsColumn.ReadOnly = true;
             this.colPublisherName.Visible = true;
             this.colPublisherName.VisibleIndex = 6;
+            this.colPublisherName.Width = 256;
             // 
             // frmBook
             // 
