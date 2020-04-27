@@ -34,7 +34,7 @@ namespace BookApiClient
 
 
 
-        public async Task<Models.Publisher> GetPublishertAsync(int publisherId)
+        public async Task<Models.Publisher> GetPublisherAsync(int publisherId)
         {
             HttpClient client = HttpClients.GetInstance();
             Models.Publisher publisher = null;

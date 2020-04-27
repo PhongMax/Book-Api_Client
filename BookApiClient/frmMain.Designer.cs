@@ -128,7 +128,7 @@
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem4);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem5);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "API CRUD";
+            this.ribbonPageGroup1.Text = "MENU";
             // 
             // xtraTabbedMdiManager1
             // 

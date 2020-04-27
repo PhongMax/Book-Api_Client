@@ -104,7 +104,7 @@ namespace BookApiClient
         // Load One
         private async void GetDataToEdit(int  Id)
         {
-            var Publisher = await _publisherRepository.GetPublishertAsync(Id);
+            var Publisher = await _publisherRepository.GetPublisherAsync(Id);
             if (Publisher == null)
             {
                 return;
