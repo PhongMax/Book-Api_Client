@@ -50,6 +50,9 @@ namespace BookApiClient.Repository
             HttpClient client = HttpClients.GetInstance();
 
             HttpResponseMessage response = await client.GetAsync("authors/getall");
+
+          
+
             List<Models.Author> listAuthor = null;
             if (response.IsSuccessStatusCode)
             {

@@ -29,6 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAuthor));
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
             this.groupControlEdit = new DevExpress.XtraEditors.GroupControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
@@ -43,6 +48,8 @@
             this.colID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colFullName = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colAddress = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colBook = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.btnBooks = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.groupControlPublisher = new DevExpress.XtraEditors.GroupControl();
             this.btnSua = new DevExpress.XtraEditors.SimpleButton();
             this.btnXoa = new DevExpress.XtraEditors.SimpleButton();
@@ -55,6 +62,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBooks)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControlPublisher)).BeginInit();
             this.groupControlPublisher.SuspendLayout();
             this.SuspendLayout();
@@ -150,6 +158,8 @@
             this.gridControl1.Location = new System.Drawing.Point(0, 74);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
+            this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.btnBooks});
             this.gridControl1.Size = new System.Drawing.Size(995, 331);
             this.gridControl1.TabIndex = 4;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -160,7 +170,8 @@
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colID,
             this.colFullName,
-            this.colAddress});
+            this.colAddress,
+            this.colBook});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
@@ -211,6 +222,27 @@
             this.colAddress.Visible = true;
             this.colAddress.VisibleIndex = 2;
             this.colAddress.Width = 530;
+            // 
+            // colBook
+            // 
+            this.colBook.AppearanceHeader.Options.UseTextOptions = true;
+            this.colBook.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colBook.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.colBook.Caption = "Books";
+            this.colBook.ColumnEdit = this.btnBooks;
+            this.colBook.FieldName = "books";
+            this.colBook.Name = "colBook";
+            this.colBook.Visible = true;
+            this.colBook.VisibleIndex = 3;
+            // 
+            // btnBooks
+            // 
+            this.btnBooks.AutoHeight = false;
+            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
+            this.btnBooks.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            this.btnBooks.Name = "btnBooks";
+            this.btnBooks.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             // 
             // groupControlPublisher
             // 
@@ -289,6 +321,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBooks)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControlPublisher)).EndInit();
             this.groupControlPublisher.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -316,5 +349,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn colID;
         private DevExpress.XtraGrid.Columns.GridColumn colFullName;
         private DevExpress.XtraGrid.Columns.GridColumn colAddress;
+        private DevExpress.XtraGrid.Columns.GridColumn colBook;
+        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit btnBooks;
     }
 }
