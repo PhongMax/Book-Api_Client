@@ -22,7 +22,7 @@ namespace BookApiClient
         {
             HttpClient client = HttpClients.GetInstance();
             // add base Url
-            client.BaseAddress = new Uri($"https://bookapiptit.azurewebsites.net/api/");
+            client.BaseAddress = new Uri($" https://webapiptit.azurewebsites.net/api/");
             client.DefaultRequestHeaders.Accept.Clear();
 
             // Add an Accept header for JSON format.
