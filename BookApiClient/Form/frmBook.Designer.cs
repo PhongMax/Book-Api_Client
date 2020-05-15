@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.DataAccess.Json.UriJsonSource uriJsonSource1 = new DevExpress.DataAccess.Json.UriJsonSource();
             DevExpress.DataAccess.Json.JsonSchemaNode jsonSchemaNode1 = new DevExpress.DataAccess.Json.JsonSchemaNode("root", true, DevExpress.DataAccess.Json.JsonNodeType.Array);
             DevExpress.DataAccess.Json.JsonSchemaNode jsonSchemaNode2 = new DevExpress.DataAccess.Json.JsonSchemaNode("ID", true, DevExpress.DataAccess.Json.JsonNodeType.Property, typeof(System.Nullable<long>));
             DevExpress.DataAccess.Json.JsonSchemaNode jsonSchemaNode3 = new DevExpress.DataAccess.Json.JsonSchemaNode("Name", true, DevExpress.DataAccess.Json.JsonNodeType.Property, typeof(string));
@@ -68,9 +67,10 @@
             // 
             // jsonDataSource1
             // 
-            uriJsonSource1.Uri = new System.Uri("https://bookapiptit.azurewebsites.net/api/books/getalltoview", System.UriKind.Absolute);
-            this.jsonDataSource1.JsonSource = uriJsonSource1;
+            this.jsonDataSource1.ConnectionName = "JsonConnection 1";
             this.jsonDataSource1.Name = "jsonDataSource1";
+            jsonSchemaNode9.DisplayName = "Images";
+            jsonSchemaNode10.DisplayName = "AuthorNames";
             jsonSchemaNode1.Nodes.Add(jsonSchemaNode2);
             jsonSchemaNode1.Nodes.Add(jsonSchemaNode3);
             jsonSchemaNode1.Nodes.Add(jsonSchemaNode4);

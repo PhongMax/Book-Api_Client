@@ -28,9 +28,6 @@ namespace BookApiClient
             // Add an Accept header for JSON format.
             client.DefaultRequestHeaders.Accept.Add(
                 new MediaTypeWithQualityHeaderValue("application/json"));
-
-
-        
         }
 
         // TODO : HANDLE CONTROL CHILDREN
